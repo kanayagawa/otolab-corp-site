@@ -17,18 +17,14 @@ steps:
 - task: PublishBuildArtifacts@1
 # FTP upload
 # Upload files using FTP
+
 - task: FtpUpload@2
   inputs:
-    #credentialsOption: 'serviceEndpoint' # Options: serviceEndpoint, inputs
-    #serverEndpoint: # Required when credentialsOption == ServiceEndpoint
-    serverUrl:/home/otosvr01/otolab.co.jp/public_html # Required when credentialsOption == Inputs
-    username:kanayagawa@otolab.co.jp # Required when credentialsOption == Inputs
-    password:jbl-4312M # Required when credentialsOption == Inputs
-    rootDirectory: 
-    #filePatterns: '**' 
-    #remoteDirectory: '/upload/$(Build.BuildId)/' 
-    #clean: false 
-    #cleanContents: false # Required when clean == False
-    #preservePaths: false 
-    #trustSSL: false 
-
+    credentialsOption: 'serviceEndpoint'
+    rootDirectory: '/home/otosvr01/otolab.co.jp/public_html'
+    filePatterns: '**'
+    remoteDirectory: '/upload/$(Build.BuildId)/'
+    clean: false
+    cleanContents: false
+    preservePaths: false
+    trustSSL: false
