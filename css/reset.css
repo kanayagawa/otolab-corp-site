@@ -1,2 +1,50 @@
 /* CSS Document */
+/* -----------------------------------------------------------------------------
+
+
+
+  reset
+
+
+
+----------------------------------------------------------------------------- */
+html {  background: #FFF; color: #000;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { padding: 0; margin: 0;}
+table { border-collapse: collapse; border-spacing: 0;}
+fieldset, img { border: 0;}
+address, caption, cite, code, dfn, em, strong, th, var { font-style: normal; font-weight: normal;}
+ol, ul { list-style: none;}
+caption, th { text-align: left;}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+q:before, q:after { content: '';}
+abbr, acronym { border: 0; font-variant: normal;}
+sup { vertical-align: text-top;}
+sub { vertical-align: text-bottom;}
+input, textarea, select { font-family: inherit; font-size: inherit; font-weight: inherit;}
+input, textarea, select { *font-size: 100%;}
+legend { color: #000;}
+#yui3-css-stamp.cssreset { display: none;}
+.inline_block { display: inline-block; *display: inline; *zoom: 1;}
+.table_cell { display: table-cell; *display: inline; *zoom: 1; vertical-align: middle;}
+.fr, .imgR { float: right; margin-left: 10px;}
+.fl, .imgL { float: left; margin-right: 10px;}
+.imgC, .tC { text-align: center;}
+.imgC { display: block; margin-left: auto; margin-right: auto;}
+.tR { text-align: right;}
+.blue { color: #7095e7 !important;}
+.blue2 { color: #7bd3d6 !important;}
+.green { color: #149346 !important;}
+.orange { color: #f7af00 !important;}
+.pink { color: #f299d1 !important;}
+.purple { color: #ffc1ff !important;}
+.red { color: #ff2e2a !important;}
+.white { color: white !important;}
+/* clearfix */
+.clear, .header-top,
+.header-bottom, #footer { *zoom: 1;}
+.clear:after, .header-top:after,
+.header-bottom:after, #footer:after { clear: both; content: "."; display: block; height: 0; visibility: hidden;}
+
+
+
 
