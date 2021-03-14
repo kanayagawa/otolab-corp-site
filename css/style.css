@@ -1,9 +1,16 @@
 /* CSS Document */
-
+h1{
+    text-align: center;
+    margin: 0 auto;
+}
+article h1{
+    margin-top: 50px;
+}
 section {
     box-sizing: border-box;
     padding: 20px;
-    width: 80%;
+    width: 90%;
+    max-width: 880px;
     border: 1px solid #cccccc;
     margin: 0 auto;
 }
