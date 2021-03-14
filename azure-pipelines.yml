@@ -1,0 +1,34 @@
+# HTML
+# Archive your static HTML project and save it with the build record.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(build.sourcesDirectory)'
+    includeRootFolder: false
+- task: PublishBuildArtifacts@1
+# FTP upload
+# Upload files using FTP
+- task: FtpUpload@2
+  inputs:
+    #credentialsOption: 'serviceEndpoint' # Options: serviceEndpoint, inputs
+    #serverEndpoint: # Required when credentialsOption == ServiceEndpoint
+    serverUrl:/home/otosvr01/otolab.co.jp/public_html # Required when credentialsOption == Inputs
+    username:kanayagawa@otolab.co.jp # Required when credentialsOption == Inputs
+    password:jbl-4312M # Required when credentialsOption == Inputs
+    rootDirectory: 
+    #filePatterns: '**' 
+    #remoteDirectory: '/upload/$(Build.BuildId)/' 
+    #clean: false 
+    #cleanContents: false # Required when clean == False
+    #preservePaths: false 
+    #trustSSL: false 
+
