@@ -1,5 +1,8 @@
 /* CSS Document */
 
 section {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 80%;
     border: 1px solid #cccccc;
 }
